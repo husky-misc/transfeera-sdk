@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "transfeera_sdk/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "transfeera_sdk"
+  spec.name          = "transfeera-sdk"
   spec.version       = TransfeeraSDK::VERSION
   spec.authors       = ["Fernando Oliveira"]
   spec.email         = ["nandooliveira.al@gmail.com"]
