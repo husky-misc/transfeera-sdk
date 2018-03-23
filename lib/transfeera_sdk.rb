@@ -12,25 +12,9 @@ module TransfeeraSDK
   mattr_accessor :token
   mattr_accessor :user_agent
 
-	# extend ::ActiveSupport::Autoload
-  #
-  # autoload :Market
-  #
-  # module Trading
-  # 	extend ::ActiveSupport::Autoload
-  # 	autoload :Order
-  #   autoload :Trade
-  # 	autoload :Wallet
-  # end
-  #
-  # module Services
-  #   module Bitcoin
-  #     module Withdrawal
-  #       module Request
-  #       	extend ::ActiveSupport::Autoload
-  #       	autoload :CheckSchedule
-  #       end
-  #     end
-  #   end
-  # end
+	extend ::ActiveSupport::Autoload
+
+  autoload :Bank
+  autoload :Batch
+  autoload :Transfer
 end

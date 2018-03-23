@@ -3,7 +3,7 @@ require 'json'
 require_relative 'message_signer'
 require "addressable/uri"
 
-module ItBitSDK
+module TransfeeraSDK
   class Base
     BASE_URL = 'https://api.transfeera.com'
 
