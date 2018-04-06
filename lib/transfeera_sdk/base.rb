@@ -1,7 +1,6 @@
 require 'rest_client'
 require 'json'
-require_relative 'message_signer'
-require "addressable/uri"
+require 'addressable/uri'
 
 module TransfeeraSDK
   class Base
@@ -15,7 +14,8 @@ module TransfeeraSDK
 
       headers = {
         authorization: TransfeeraSDK.token,
-        user_agent:    TransfeeraSDK.user_agent
+        user_agent:    TransfeeraSDK.user_agent,
+        content_type:  'application/json'
       }
 
       begin

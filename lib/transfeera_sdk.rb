@@ -6,8 +6,6 @@ require 'bigdecimal'
 require 'digest/sha2'
 require 'base64'
 
-Dir[File.expand_path("../transfeera-sdk/*.rb", __FILE__)].each {|f| require f}
-
 module TransfeeraSDK
   mattr_accessor :token
   mattr_accessor :user_agent
