@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    transfeera-sdk (0.1.2)
+    transfeera-sdk (0.1.4)
       activesupport
       rest-client
 
@@ -64,7 +64,7 @@ GEM
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.4)
+    unf_ext (0.0.7.5)
     vcr (4.0.0)
     webmock (3.2.1)
       addressable (>= 2.3.6)

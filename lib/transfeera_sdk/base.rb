@@ -1,6 +1,7 @@
 require 'rest_client'
 require 'json'
 require 'addressable/uri'
+require 'pry'
 
 module TransfeeraSDK
   class Base
