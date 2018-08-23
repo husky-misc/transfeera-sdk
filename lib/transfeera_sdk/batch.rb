@@ -32,9 +32,9 @@ module TransfeeraSDK
     private
 
     def update_bank_ids(opts)
-      opts['transfers'].each do |transfer|
-        bank_code = transfer['destination_bank_account']['bank_id'].to_s.rjust(3, '0')
-        transfer['destination_bank_account']['bank_id'] = ::TransfeeraSDK::Bank.new.bank_id_from_code(bank_code)
+      opts[:transfers].each do |transfer|
+        bank_code = transfer[:destination_bank_account][:bank_id].to_s.rjust(3, '0')
+        transfer[:destination_bank_account][:bank_id] = ::TransfeeraSDK::Bank.new.bank_id_from_code(bank_code)
       end
     end
   end
