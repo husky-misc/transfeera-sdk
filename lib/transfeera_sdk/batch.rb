@@ -9,6 +9,7 @@ module TransfeeraSDK
     end
 
     def update!(batch_id, opts = {})
+      update_bank_ids(opts)
       send_request(:put, "/batch/#{batch_id}", opts)
     end
 
